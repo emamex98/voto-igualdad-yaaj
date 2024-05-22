@@ -3,8 +3,12 @@ import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
+import netlify from "@astrojs/netlify/functions";
+
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astroship.web3templates.com",
+  site: "https://voto-por-la-igualdad.netlify.app/quienes-somos/",
   integrations: [tailwind(), mdx(), sitemap()],
+  output: "server",
+  adapter: netlify()
 });
