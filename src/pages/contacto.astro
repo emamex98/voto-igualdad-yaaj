@@ -1,0 +1,35 @@
+---
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import { Icon } from "astro-icon";
+---
+
+<Layout title="Contacto">
+  <Container>
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Contacto
+      </h2>
+
+      <div class="content-center">
+        <p class="text-lg leading-relaxed mt-3">
+          ¡Síguenos en nuestras redes sociales para estar al tanto de todas las actualizaciones!
+        </p>
+        <p class="text-lg mt-3">
+          <a href="https://twitter.com/YaajMexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">X</a> |
+          <a href="https://www.facebook.com/YaajMexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">Facebook</a> |
+          <a href="https://www.instagram.com/YaajMexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">Instagram</a> |
+          <a href="https://www.tiktok.com/@yaajmexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">TikTok</a> |
+          <a href="https://www.linkedin.com/company/yaaj-mexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">LinkedIn</a> |
+          <a href="https://www.youtube.com/YaajMexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">YouTube</a>
+        </p>
+        <p class="text-lg leading-relaxed mt-3">
+          Para más información, contáctanos en: <a href="mailto:yaajmexico@gmail.com" class="text-gray-600 hover:underline hover:text-gray-900">yaajmexico@gmail.com</a>
+        </p>
+      </div>
+
+
+    </div>
+  </Container>
+</Layout>

@@ -18,12 +18,14 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "Voto Por La Igualdad MX"
+  : "Voto Por La Igualdad MX";
+
+const metaDescription = "Voto por la Igualdad MX es una campaña de Yaaj México para informar a la población LGBTIQ+ sobre temas electorales, así como para promover su participación cívica y política"
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -33,7 +35,7 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="metaDescription"
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -44,11 +46,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Voto Por La Igualdad MX`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Voto Por La Igualdad MX",
         },
       }}
     />
