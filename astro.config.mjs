@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://vxi-yaaj.netlify.app/",
+  site: "https://votoporlaigualdadmexico.org/",
   integrations: [tailwind(), mdx(), sitemap()],
 });
