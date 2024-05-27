@@ -1,6 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
+import Link from "@components/ui/link.astro";
 ---
 
 <Layout title="Materiales">
@@ -10,34 +11,58 @@ import Container from "@components/container.astro";
         Consulta y descarga materiales
       </h2>
 
-      <h3 class="font-bold text-2xl text-gray-800 pt-2">
-        Infografías
-      </h3>
+      <h3 class="font-bold text-2xl text-gray-800 pt-2">Infografías</h3>
       <p class="text-lg leading-relaxed py-2">
-        Explora nuestros gráficos informativos sobre las elecciones en México 2024. Estas infografías 
-        buscan abonar a la comprensión del panorama electoral, destacando los temas clave que atañen a 
-        las personas LGBTIQ+ y proporcionando detalles esenciales para el ejercicio del derecho al voto.
-        ¡Infórmate, descárgalas y comparte!
+        Explora nuestros gráficos informativos sobre las elecciones en México
+        2024. Estas infografías buscan abonar a la comprensión del panorama
+        electoral, destacando los temas clave que atañen a las personas LGBTIQ+
+        y proporcionando detalles esenciales para el ejercicio del derecho al
+        voto. ¡Infórmate, descárgalas y comparte!
       </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <Link
+          size="lg"
+          target="_blank"
+          href="https://drive.google.com/drive/folders/14GVCbxrpN-phn8pGbxiB3IAUw7raB_gl"
+          class="flex gap-1 items-center justify-center">
+          Descargar infografías
+        </Link>
+      </div>
 
       <h3 class="font-bold text-2xl text-gray-800 pt-2">
         Guías y documentos oficiales
       </h3>
       <p class="text-lg leading-relaxed py-2">
-        Descarga documentos oficiales relevantes para el proceso electoral 2024, específicamente 
-        relacionados con nuestras poblaciones LGBTIQ+. Estos materiales te proporcionarán la información 
-        necesaria para entender mejor las políticas y regulaciones que involucran a nuestra comunidad, 
-        asegurando que estés bien preparada para participar plenamente en las elecciones. 
+        Descarga documentos oficiales relevantes para el proceso electoral 2024,
+        específicamente relacionados con nuestras poblaciones LGBTIQ+. Estos
+        materiales te proporcionarán la información necesaria para entender
+        mejor las políticas y regulaciones que involucran a nuestra comunidad,
+        asegurando que estés bien preparada para participar plenamente en las
+        elecciones.
       </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <Link
+          size="lg"
+          target="_blank"
+          href="https://drive.google.com/drive/folders/14WOb_rzYMxBZuAbj4NPM_qHBNtkXlz2E"
+          class="flex gap-1 items-center justify-center">
+          Descargar guías y documentos
+        </Link>
+      </div>
 
-      <h3 class="font-bold text-2xl text-gray-800 pt-2">
-        Investigación
-      </h3>
+      <h3 class="font-bold text-2xl text-gray-800 pt-2">Investigación</h3>
       <p class="text-lg leading-relaxed py-2">
         Consulta nuestros informes de investigación pre y post electoral 2024.
       </p>
-
-
+      <div class="flex flex-col sm:flex-row gap-3">
+        <Link
+          size="lg"
+          target="_blank"
+          href="https://drive.google.com/drive/folders/14Ws2KyUbiMOIUeBaQpGA1xAT1EdeIFdc"
+          class="flex gap-1 items-center justify-center">
+          Descargar investigaciones
+        </Link>
+      </div>
     </div>
   </Container>
 </Layout>

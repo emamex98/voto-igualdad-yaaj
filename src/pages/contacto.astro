@@ -6,28 +6,83 @@ import Container from "@components/container.astro";
 <Layout title="Contacto">
   <Container>
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">
-        Contacto
-      </h2>
+      <h2 class="font-bold text-3xl text-gray-800">Contacto</h2>
 
       <div class="content-center">
-        <p class="text-lg leading-relaxed mt-3">
-          ¡Síguenos en nuestras redes sociales para estar al tanto de todas las actualizaciones!
+        <p class="text-lg leading-relaxed mt-3 mb-6">
+          ¡Síguenos en nuestras redes sociales para estar al tanto de todas las
+          actualizaciones!
         </p>
-        <p class="text-lg mt-3">
-          <a href="https://twitter.com/YaajMexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">X</a> |
-          <a href="https://www.facebook.com/YaajMexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">Facebook</a> |
-          <a href="https://www.instagram.com/YaajMexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">Instagram</a> |
-          <a href="https://www.tiktok.com/@yaajmexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">TikTok</a> |
-          <a href="https://www.linkedin.com/company/yaaj-mexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">LinkedIn</a> |
-          <a href="https://www.youtube.com/YaajMexico" target="_blank" class="text-gray-600 hover:underline hover:text-gray-900">YouTube</a>
-        </p>
-        <p class="text-lg leading-relaxed mt-3">
-          Para más información, contáctanos en: <a href="mailto:yaajmexico@gmail.com" class="text-gray-600 hover:underline hover:text-gray-900">yaajmexico@gmail.com</a>
-        </p>
+
+        <div class="flex items-center gap-6 flex-wrap">
+          <div class="min-w-32 md:min-w-fit">
+            <i class="fi fi-brands-twitter-alt align-middle"></i>
+            <a
+              href="https://twitter.com/YaajMexico"
+              target="_blank"
+              class="text-lg ml-2 text-gray-600 hover:underline hover:text-gray-900"
+              >X / Twitter</a
+            >
+          </div>
+          <div class="min-w-32 md:min-w-fit">
+            <i class="fi fi-brands-facebook align-middle"></i>
+            <a
+              href="https://www.facebook.com/YaajMexico"
+              target="_blank"
+              class="text-lg ml-2 text-gray-600 hover:underline hover:text-gray-900"
+              >Facebook</a
+            >
+          </div>
+          <div class="min-w-32 md:min-w-fit">
+            <i class="fi fi-brands-instagram align-middle"></i>
+            <a
+              href="https://www.instagram.com/YaajMexico"
+              target="_blank"
+              class="text-lg ml-2 text-gray-600 hover:underline hover:text-gray-900"
+              >Instagram</a
+            >
+          </div>
+          <div class="min-w-32 md:min-w-fit">
+            <i class="fi fi-brands-tik-tok align-middle"></i><a
+              href="https://www.tiktok.com/@yaajmexico"
+              target="_blank"
+              class="text-lg ml-2 text-gray-600 hover:underline hover:text-gray-900"
+              >TikTok</a
+            >
+          </div>
+          <div class="min-w-32 md:min-w-fit">
+            <i class="fi fi-brands-linkedin align-middle"></i><a
+              href="https://www.linkedin.com/company/yaaj-mexico"
+              target="_blank"
+              class="text-lg ml-2 text-gray-600 hover:underline hover:text-gray-900"
+              >LinkedIn</a
+            >
+          </div>
+          <div class="min-w-32 md:min-w-fit">
+            <i class="fi fi-brands-youtube align-middle"></i><a
+              href="https://www.youtube.com/YaajMexico"
+              target="_blank"
+              class="text-lg ml-2 text-gray-600 hover:underline hover:text-gray-900"
+              >YouTube</a
+            >
+          </div>
+        </div>
       </div>
 
-
+      <p class="text-lg leading-relaxed mt-3">
+        Para más información, contáctanos en: <a
+          href="mailto:yaajmexico@gmail.com"
+          class="text-gray-600 hover:underline hover:text-gray-900"
+          >yaajmexico@gmail.com</a
+        >
+      </p>
     </div>
   </Container>
 </Layout>
+
+<style>
+  @import "@flaticon/flaticon-uicons/css/brands/all";
+  .fi {
+    font-size: 25px;
+  }
+</style>
