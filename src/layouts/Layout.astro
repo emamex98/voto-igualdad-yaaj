@@ -3,6 +3,7 @@ import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter/index.css";
+import logo_vxi from "assets/logo_vxi.png";
 
 export interface Props {
   title: string;
@@ -33,7 +34,7 @@ const metaDescription =
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
+    <link rel="preload" as="image" href={logo_vxi.src} />
     <SEO
       title={makeTitle}
       description="metaDescription"
