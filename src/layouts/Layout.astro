@@ -38,7 +38,7 @@ const metaDescription =
     <link rel="preload" as="image" href={logo_vxi.src} />
     <SEO
       title={makeTitle}
-      description="metaDescription"
+      description={metaDescription}
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -49,7 +49,7 @@ const metaDescription =
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Voto Por La Igualdad MX`,
+          title: makeTitle,
           image: resolvedImageWithDomain,
         },
         image: {

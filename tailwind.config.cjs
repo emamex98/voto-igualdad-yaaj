@@ -10,4 +10,9 @@ module.exports = {
     },
   },
   plugins: [require("@tailwindcss/typography")],
+  purge: {
+    safelist: [
+      'min-w-32',
+    ]
+  },
 };
