@@ -1,19 +1,33 @@
+---
+import { Picture } from "astro:assets";
+import logos_alianzas from "assets/logos_alianzas.png";
+---
+
+<style>
+  .custom-img {
+    max-width: 70vw;
+
+    @media screen and (max-width: 800px) {
+      max-width: 100vw;
+    }
+  }
+</style>
+
 <footer class="my-20">
+  <div class="flex justify-center border-t-2 border-gray-700 pt-5 mb-10">
+    <Picture
+      src={logos_alianzas}
+      alt="Logos de Aliades"
+      widths={[600, 800, 1920]}
+      sizes="(max-width: 800px) 100vw, 70wv"
+      loading="eager"
+      format="avif"
+      class="custom-img"
+    />
+  </div>
   <p class="text-center text-sm text-slate-500">
-    Desarrollado por Yaaj México.
-  </p>
-  <!--
-    Can we ask you a favor 🙏
-    Please keep this backlink on your website if possible.
-    or Purchase a commercial license from https://web3templates.com
-  -->
-  <p class="text-center text-xs text-slate-500 mt-1">
-    Template diseñado por <a
-      href="https://web3templates.com"
-      target="_blank"
-      rel="noopener"
-      class="hover:underline">
-      Web3Templates.
-    </a>
+    Desarrollado por <a href="https://yaajmexico.org" target="_blank"
+      >Yaaj México</a
+    >.
   </p>
 </footer>

@@ -1,6 +1,6 @@
 ---
 import { Picture } from "astro:assets";
-import logo_vxi from "assets/logo_vxi.png";;
+import logo_vxi_hd from "assets/logo_vxi_hd.png";
 import Link from "@components/ui/link.astro";
 ---
 
@@ -8,9 +8,9 @@ import Link from "@components/ui/link.astro";
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="pb-20 md:pr-20 md:py-6 md:block">
     <Picture
-      src={logo_vxi}
+      src={logo_vxi_hd}
       alt="Logotipo Voto Por La Igualdad"
-      widths={[200, 400, 600]}
+      widths={[200, 400, 700]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
@@ -23,22 +23,20 @@ import Link from "@components/ui/link.astro";
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
       <b>Voto por la Igualdad MX</b> es una campaña impulsada por Yaaj México y el
-     
-     
       LGBTQ+ Victory Institute para informar a la población LGBTIQ+ sobre temas electorales,
       así como para promover su participación cívica y política.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
         href="/quienes-somos"
-       class="flex gap-1 items-center justify-center"
+        class="flex gap-1 items-center justify-center"
         rel="noopener">
         Conoce más
       </Link>
       <Link
         size="lg"
         rel="noopener"
-       href="/materiales"
+        href="/materiales"
         class="flex gap-1 items-center justify-center">
         Descargar materiales
       </Link>
